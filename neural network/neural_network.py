@@ -37,7 +37,7 @@ print('Initial Weight (Random):\n', initial_weights)
 
 nn_weights = initial_weights
 
-for i in range(1000000):
+for i in range(100000):
     prediction = sigmoid(np.dot(training_inputs, nn_weights))
     error = training_outputs - prediction
     # print('Error:\n', error)
@@ -48,6 +48,10 @@ for i in range(1000000):
 
 print('Prediction:\n', prediction)
 print('NN weight:\n', nn_weights)
+
+
+
+
 
 
 
